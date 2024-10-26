@@ -1,0 +1,15 @@
+<div class="carousel-container" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)" (mouseup)="onMouseUp()" (keydown)="onKeyDown($event)">
+  <div class="carousel" [style.transform]="'translateX(' + currentTranslate + 'px)'">
+    <div class="carousel-item" *ngFor="let startup of startups">
+      <h3>{{ startup.name }}</h3>
+      <p>{{ startup.description }}</p>
+      <div class="image-carousel">
+        <div class="image-item" *ngFor="let image of startup.images">
+          <img [src]="image" alt="{{startup.name}} image">
+        </div>
+      </div>
+      <button (click)="selectStartup(startup.id)"></button>
+    </div>
+  </div>
+</div>
+

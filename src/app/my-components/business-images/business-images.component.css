@@ -1,0 +1,17 @@
+.business-images {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  gap: 16px; /* Space between grid items */
+  margin: 20px; /* Optional margin around the grid */
+}
+
+.image-item {
+  overflow: hidden; /* Ensure images do not overflow the grid item */
+}
+
+.image-item img {
+  width: 100%; /* Make images responsive */
+  height: 250px; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}

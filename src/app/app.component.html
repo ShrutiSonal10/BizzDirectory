@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<app-startup-description></app-startup-description>
+<app-startup-description></app-startup-description>
+<app-startup-description></app-startup-description>
+<app-startup-description></app-startup-description>
+<app-startup-carousel (startupSelected)="onStartupSelected($event)"></app-startup-carousel>
+<app-business-images *ngIf="selectedStartupId !== null" [startupId]="selectedStartupId"></app-business-images>
+<router-outlet></router-outlet >

@@ -1,0 +1,128 @@
+/* Navbar styles */
+.navbar {
+  background-color: #333;      /* Dark background for the navbar */
+  padding: 1rem;               /* Padding for spacing */
+  color: white;                /* Default text color */
+}
+
+.navbar-container {
+  display: flex;               /* Use flexbox for layout */
+  justify-content: space-between; /* Space elements evenly */
+  align-items: center;         /* Center items vertically */
+}
+
+/* Logo Image Styles */
+
+/*
+.navbar-logo-image:hover {
+  transform: scale(1.1);        Scale the logo by 10% on hover */
+
+
+/* Navbar Menu Styles */
+.navbar-menu {
+  list-style-type: none;       /* Remove bullet points */
+  display: flex;               /* Use flexbox for layout */
+  gap: 1.5rem;                 /* Space between menu items */
+}
+
+.navbar-item {
+  margin: 0;                  /* Reset margin */
+}
+
+/* Navbar Link Styles */
+.navbar-link {
+  color: white;               /* Link color */
+  text-decoration: none;      /* Remove underline */
+  font-size: 1rem;           /* Standard font size */
+  transition: color 0.3s ease; /* Smooth transition for link color on hover */
+}
+
+.navbar-link:hover {
+  text-decoration: underline;  /* Underline on hover */
+}
+
+/* App Name Styles */
+.app-name {
+  font-family: 'Cursive', cursive; /* Set the font to cursive */
+  font-size: 24px;             /* Set the font size */
+  font-weight: bold;           /* Make the font bold */
+  color: #00f;                 /* Set a default text color */
+  margin-left: 10px;           /* Space to the left */
+  text-shadow: 
+      0 0 5px #00f,           /* Blue glow */
+      0 0 10px #00f,          /* Blue glow */
+      0 0 15px #00f;          /* Blue glow */
+  text-transform: uppercase;   /* Uppercase text for emphasis */
+  letter-spacing: 1px;        /* Increase letter spacing for readability */
+}
+
+.app-name:hover {
+  color: #2980b9;             /* Change color on hover */
+}
+/* Navbar Logo Image Styles */
+.navbar-logo-image {
+  width: 100px;                /* Set the initial width */
+  height: 100px;               /* Set the initial height to maintain a circle */
+  border-radius: 50%;          /* Make the logo circular */
+  overflow: hidden;            /* Hide overflow to ensure the image stays inside the circle */
+  background-size: cover;      /* Ensure the image covers the entire circle */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;/* Prevent image repetition */
+  margin: 3px 50px 3px 0;      /* Add margin with left margin for spacing */
+  padding: 5px;                /* Add space inside the logo */
+  border: 2px solid #ccc;      /* Add a border around the logo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow effect on hover */
+}
+
+.navbar-logo-image:hover {
+  transform: scale(1.2);       /* Scale the logo by 20% on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+}
+/* Navbar Menu Styles */
+.navbar-menu {
+  list-style-type: none;         /* Remove bullet points */
+  display: flex;                 /* Use flexbox for layout */
+  gap: 1.5rem;                   /* Space between menu items */
+  padding: 0;                    /* Remove default padding */
+  margin: 0;                     /* Remove default margin */
+}
+
+.navbar-item {
+  position: relative;            /* Positioning for additional styling (like borders or hover effects) */
+  margin: 0;                     /* Reset margin */
+  padding: 0.5rem 1rem;          /* Add padding inside the list item for spacing */
+  font-family: 'Arial', sans-serif; /* Font style for the nav items */
+  font-size: 1rem;               /* Set a standard font size */
+  font-weight: bold;             /* Bold font for emphasis */
+  transition: all 0.3s ease;     /* Smooth transition for hover effects */
+  border-radius: 5px;            /* Rounded corners */
+  background-color: transparent; /* Transparent background by default */
+}
+
+/* Navbar Link Styles */
+.navbar-link {
+  color: white;                   /* Default link color */
+  text-decoration: none;           /* Remove underline */
+  padding: 0.5rem 1rem;            /* Add padding for clickable area */
+  display: block;                 /* Ensure the entire list item is clickable */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions for color and background */
+}
+
+/* Hover Effects for Nav Items */
+.navbar-item:hover {
+  background-color: #555;         /* Change background color on hover */
+  border-bottom: 3px solid #2980b9; /* Add a bottom border for emphasis */
+}
+
+/* Hover Effect for Links */
+.navbar-link:hover {
+  color: #2980b9;                 /* Change link color on hover */
+  text-decoration: none;          /* Ensure no underline on hover */
+}
+
+/* Active Nav Item Styling */
+.navbar-item.active {
+  background-color: #2980b9;      /* Highlight the active item */
+  color: white;                   /* Keep the text white */
+  border-bottom: 3px solid #fff;  /* White bottom border for the active state */
+}

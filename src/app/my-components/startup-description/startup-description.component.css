@@ -1,0 +1,17 @@
+.startup-description-container {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white; /* Set text color to white */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    max-width: 400px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+  }
+  
+  .description-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 15px; /* Add padding inside the content */
+    border-radius: 8px; /* Match the outer container's corners */
+  }
+  

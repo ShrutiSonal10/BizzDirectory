@@ -1,0 +1,65 @@
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background-color: #f0f0f0; /* Add a background color for better contrast */
+  padding: 10px 0; /* Adds some vertical space around the carousel */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100vw; /* Each startup takes up full screen width */
+  padding: 20px;
+  text-align: center;
+}
+
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px; /* Increased gap between images */
+  padding: 10px;
+  scroll-behavior: smooth; /* Smooth scroll when using navigation */
+}
+
+.image-item {
+  flex: 0 0 auto;
+  width: 250px; /* Increased width for each image */
+  height: 180px; /* Increased height for each image */
+  border: 3px solid lightpink; /* Light pink border */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensure no overflow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: white; /* Ensures a clean background for images */
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect to enlarge the image and give it a 3D look */
+.image-item:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.image-item:hover img {
+  transform: scale(1.1); /* Further enlarge the image on hover */
+}
+
+/* Hide scrollbar but allow scrolling */
+.image-carousel::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.image-carousel {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

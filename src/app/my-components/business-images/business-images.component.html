@@ -1,0 +1,6 @@
+<div class="business-images">
+  <div *ngIf="businessImages.length === 0">No images available.</div>
+  <div class="image-item" *ngFor="let image of businessImages">
+    <img [src]="image" alt="Business Image">
+  </div>
+</div>
